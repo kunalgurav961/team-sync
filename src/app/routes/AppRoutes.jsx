@@ -13,7 +13,7 @@ import RoleBasedRoute from "../protectedRoutes/RoleBasedRoute";
 
 import { employeeRoutes } from "./employeeRoutes";
 import UnAuthorized from "../../shared/ui/UnAuthorized";
-import { AdminRoutes } from "./AdminRoutes";
+import { AdminRoutes } from "./adminRoutes";
 
 const AppRoutes = () => {
   let dispatch = useDispatch();
