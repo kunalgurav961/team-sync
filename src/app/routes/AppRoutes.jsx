@@ -10,9 +10,10 @@ import RegisterPage from "../../features/auth/ui/RegisterPage";
 import DashboradLayout from "../layouts/DashboradLayout";
 import { commonRoutes } from "./commonRoutes";
 import RoleBasedRoute from "../protectedRoutes/RoleBasedRoute";
-import { adminRoutes } from "./AdminRoutes";
+
 import { employeeRoutes } from "./employeeRoutes";
 import UnAuthorized from "../../shared/ui/UnAuthorized";
+import { AdminRoutes } from "./AdminRoutes";
 
 const AppRoutes = () => {
   let dispatch = useDispatch();
@@ -55,7 +56,7 @@ const AppRoutes = () => {
             ...commonRoutes,
             {
               element: <RoleBasedRoute allowedRoutes={"admin"} />,
-              children: adminRoutes,
+              children: AdminRoutes,
             },
             {
               element: <RoleBasedRoute allowedRoutes={"employee"} />,

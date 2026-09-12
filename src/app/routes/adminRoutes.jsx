@@ -6,7 +6,7 @@ import Task from "../../features/Admin Module/task/ui/pages/Task";
 import Chat from "../../features/chats/ui/pages/Chat";
 import Settings from "../../features/settings/ui/pages/Settings";
 
-export const adminRoutes = [
+export const AdminRoutes = [
   {
     path: "/home/employee",
     element: <Employee />,
